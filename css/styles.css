@@ -165,6 +165,12 @@ ul {
     scroll-behavior: smooth;
 }
 
+.notHidden {
+    height: 0;
+    overflow-y: hidden;
+    opacity: 0;
+}
+
 .habilidades-section,
 .projetos-section,
 .mobile-section {

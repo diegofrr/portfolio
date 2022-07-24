@@ -6,8 +6,11 @@ let mobileButton = document.querySelector('.mob');
 
 let sectionsContent = document.querySelector('.sections-content');
 let sectionsContainer = document.querySelector('.sections-container');
-let habilidadesSection = document.querySelector('.habilidades-section');
 let container = document.querySelector('.container');
+
+let habilidadesSection = document.querySelector('.habilidades-section');
+let projetosSection = document.querySelector('.projetos-section');
+let mobileSection = document.querySelector('.mobile-section');
 
 let closeModalButton = document.querySelector('.close-modal-button');
 let modal = document.querySelector('.modal');
@@ -19,6 +22,8 @@ let scrollClass = document.querySelector('.active');
 // let marginLeft = habilidadesSection.offsetWidth
 //     sectionsContainer.scrollLeft = marginLeft
 
+habilidadesButton.click();
+
 habilidadesButton.addEventListener('click', () => {
     let marginLeft = habilidadesSection.offsetWidth
     sectionsContainer.scrollLeft = marginLeft * -1
@@ -26,6 +31,11 @@ habilidadesButton.addEventListener('click', () => {
     habilidadesButton.classList.add('selected');
     projetosButton.classList.remove('selected');
     mobileButton.classList.remove('selected');
+
+    habilidadesSection.classList.remove('notHidden');
+    projetosSection.classList.add('notHidden');
+    mobileSection.classList.add('notHidden');
+
 });
 
 projetosButton.addEventListener('click', () => {
@@ -35,6 +45,10 @@ projetosButton.addEventListener('click', () => {
     projetosButton.classList.add('selected');
     habilidadesButton.classList.remove('selected');
     mobileButton.classList.remove('selected');
+
+    habilidadesSection.classList.add('notHidden');
+    projetosSection.classList.remove('notHidden');
+    mobileSection.classList.add('notHidden');
 });
 
 mobileButton.addEventListener('click', () => {
@@ -44,6 +58,11 @@ mobileButton.addEventListener('click', () => {
     mobileButton.classList.add('selected');
     habilidadesButton.classList.remove('selected');
     projetosButton.classList.remove('selected');
+
+
+    habilidadesSection.classList.add('notHidden');
+    projetosSection.classList.add('notHidden');
+    mobileSection.classList.remove('notHidden');
 });
 
 closeModalButton.addEventListener('click', () => {
