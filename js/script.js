@@ -91,4 +91,5 @@ let selavy = document.querySelector('.selavy');
 
 selavy.addEventListener('mouseover', () => {
     document.querySelector('body').classList.toggle('selavyEffect')
+    container.style.display = 'none'
 })

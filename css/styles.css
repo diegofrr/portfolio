@@ -396,7 +396,7 @@ body {
 }
 
 .selavyEffect::after {
-    content: "c'est la vie";
+    content: "c'est la vie...";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -404,27 +404,13 @@ body {
     text-align: center;
     padding-top: 60px;
     font-size: 100px;
-    color: #333;
+    color: #222;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     display: grid;
     place-items: center;
-    animation: selavy infinite alternate-reverse 1s;
 }
 
-@keyframes selavy {
-    0% {
-        content: "c'est la vie."
-    }
-
-    50% {
-        content: "c'est la vie.."
-    }
-
-    0% {
-        content: "c'est la vie.."
-    }
-}
 
 @media screen and (max-width: 400px) {
     body {
