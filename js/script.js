@@ -68,7 +68,3 @@ modal.addEventListener('click', () => {
     modal.classList.add('modal-off')
     container.classList.remove('blurFilter');
 })
-
-window.addEventListener('resize', () => {
-    habilidadesButton.click();
-});

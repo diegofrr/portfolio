@@ -44,7 +44,7 @@ ul {
 }
 
 .container {
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     margin: 0 auto;
     max-width: 500px;
     display: flex;
@@ -288,6 +288,8 @@ ul {
 body::-webkit-scrollbar {
     width: 20px;
     /* width of the entire scrollbar */
+
+    width: 0;
 }
 
 body::-webkit-scrollbar-track {
