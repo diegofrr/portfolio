@@ -34,7 +34,7 @@ habilidadesButton.addEventListener('click', () => {
 
     habilidadesSection.classList.remove('notHidden');
     projetosSection.classList.add('notHidden');
-    mobileSection.classList.add('notHidden');
+    mobileSection.classList.add('notHidden'); 
 
 });
 
