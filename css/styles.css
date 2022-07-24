@@ -118,6 +118,7 @@ ul {
     height: 40px;
     border-radius: 6px;
     transition: all .3s ease;
+    font-size: 13px;
 }
 
 .cv-btn:hover {

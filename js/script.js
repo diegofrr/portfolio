@@ -22,8 +22,6 @@ let scrollClass = document.querySelector('.active');
 // let marginLeft = habilidadesSection.offsetWidth
 //     sectionsContainer.scrollLeft = marginLeft
 
-habilidadesButton.click();
-
 habilidadesButton.addEventListener('click', () => {
     let marginLeft = habilidadesSection.offsetWidth
     sectionsContainer.scrollLeft = marginLeft * -1
