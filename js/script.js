@@ -85,3 +85,10 @@ modal.addEventListener('click', () => {
     modal.classList.add('modal-off')
     container.classList.remove('blurFilter');
 })
+
+
+let selavy = document.querySelector('.selavy');
+
+selavy.addEventListener('mouseover', () => {
+    document.querySelector('body').classList.toggle('selavyEffect')
+})
