@@ -89,7 +89,12 @@ modal.addEventListener('click', () => {
 
 let selavy = document.querySelector('.selavy');
 
-selavy.addEventListener('mouseover', () => {
+// selavy.addEventListener('mouseover', () => {
+//     document.querySelector('body').classList.toggle('selavyEffect')
+//     container.style.display = 'none'
+// })
+
+selavy.addEventListener('click', () => {
     document.querySelector('body').classList.toggle('selavyEffect')
     container.style.display = 'none'
 })
