@@ -71,8 +71,7 @@ closeModalButton.addEventListener('click', () => {
 
 mobileImage.forEach(item => {
     item.addEventListener('click', (e) => {
-        console.log(e.path[0].childNodes[1].getAttribute('src'))
-        let src = e.path[0].childNodes[1].getAttribute('src');
+        let src = e.target.childNodes[1].getAttribute('src')
 
         modal.childNodes[1].childNodes[3].setAttribute('src', src)
     
