@@ -1,4 +1,10 @@
-feather.replace()
+// NOSCRIPT CONFIG
+document.querySelector('body').classList.remove('noscript');
+document.querySelector('.projetos-section').classList.add('notHidden');
+document.querySelector('.mobile-section').classList.add('notHidden');
+document.querySelectorAll('.ampliar-btn').forEach(i => i.classList.add('displayNone'))
+document.querySelectorAll('.sections__title a').forEach(i => i.removeAttribute('href'))
+// 
 
 let habilidadesButton = document.querySelector('.hab');
 let projetosButton = document.querySelector('.proj');
@@ -16,7 +22,6 @@ let closeModalButton = document.querySelector('.close-modal-button');
 let modal = document.querySelector('.modal');
 
 let mobileImage = document.querySelectorAll('.mobile-card');
-
 let scrollClass = document.querySelector('.active');
 
 // let marginLeft = habilidadesSection.offsetWidth
@@ -95,5 +100,5 @@ let selavy = document.querySelector('.selavy');
 
 selavy.addEventListener('click', () => {
     document.querySelector('body').classList.toggle('selavyEffect')
-    container.style.display = 'none'
+    container.classList.add('displayNone')
 })

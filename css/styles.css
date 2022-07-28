@@ -125,8 +125,8 @@ ul {
     background-color: #6495ed;
 }
 
-.cv-btn svg {
-    width: 20px;
+.cv-btn i {
+    font-size: 18px;
 }
 
 .sections-container {
@@ -143,15 +143,16 @@ ul {
     gap: 10px;
 }
 
-.sections__title h2 {
+.sections__title a {
     color: #404855;
     font-size: 14px;
+    font-weight: bold;
     display: inline-block;
     cursor: pointer;
     transition: all .3s ease;
 }
 
-.sections__title h2:hover {
+.sections__title a:hover {
     color: #525b6b;
 }
 
@@ -159,11 +160,20 @@ ul {
     color: #FFF !important;
 }
 
+.noscript .sections__title a,
+.noscript .selected {
+    color: #404855 !important;
+}
+
 .sections-content {
     display: flex;
     flex-direction: row;
     width: 1500px;
     scroll-behavior: smooth;
+}
+
+.displayNone {
+    display: none;
 }
 
 .notHidden {
@@ -190,8 +200,8 @@ ul {
 .card,
 .project-card,
 .mobile-card {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
@@ -208,6 +218,10 @@ ul {
     cursor: pointer;
 }
 
+.noscript .mobile-card {
+    cursor: auto;
+}
+
 .mobile-card .project__image img {
     transition: all .3s ease;
     position: relative;
@@ -215,6 +229,10 @@ ul {
 
 .mobile-card:hover .project__image img {
     filter: blur(2px);
+}
+
+.noscript .mobile-card:hover .project__image img {
+    filter: none;
 }
 
 .mobile-card:hover .project__image::after {
@@ -236,14 +254,18 @@ ul {
     font-weight: bold;
 }
 
+.noscript .mobile-card .project__image::after {
+    display: none;
+}
+
 
 .project-card {
-    padding-bottom: 40px;
     justify-content: flex-start;
 }
 
 .card__img {
     height: 30px;
+    max-width: 30px;
 }
 
 .card__text {
@@ -269,7 +291,6 @@ ul {
     font-size: 12px;
     font-weight: normal;
     width: 100%;
-    margin-bottom: 10px;
 }
 
 .link-button {
@@ -282,9 +303,23 @@ ul {
     color: #FFF;
     border-radius: 200px;
     transition: all .3s ease;
+    margin-right: auto;
+}
+
+.ampliar-btn {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.ampliar-btn i {
+    font-size: 16px;
+}
+
+.ampliar-btn:hover {
+    box-shadow: 0 0 20px 0px #000;
 }
 
 .link-button:hover {
@@ -414,12 +449,13 @@ body {
 
 
 @media screen and (max-width: 400px) {
-    body {
-        overflow-y: hidden;
-    }
 
     .container {
         width: calc(100% - 40px);
     }
 
+}
+
+.noscript {
+   
 }

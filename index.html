@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href=""/>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Diêgo • Portfólio</title>
 </head>
 
-<body>
+<body class="noscript">
     <div class="container">
         <div class="profile-container">
             <img class="profile__image" src="./images/profile-image.png" />
@@ -27,34 +26,35 @@
 
         <div class="social-buttons">
             <a href="https://linkedin.com/in/diegoraian" target="_blank">
-                <i class='bx bxl-linkedin-square'></i>
+                <i class="uil uil-linkedin"></i>
             </a>
 
             <a href="https://github.com/diegofrr" target="_blank">
-                <i class='bx bxl-github'></i>
+                <i class="uil uil-github"></i>
             </a>
 
             <a href="https://instagram.com/diegofrr_" target="_blank">
-                <i class='bx bxl-instagram-alt'></i>
+                <i class="uil uil-instagram"></i>
             </a>
         </div>
 
         <div class="buttons">
             <a href="https://drive.google.com/uc?export=download&id=1F6xWLvgsxijjTZdb6kMwEfuGaQWo3y4l" class="cv-btn">
-                <i data-feather="download"></i>
+                <i class="uil uil-import"></i>
                 <span>Download CV</span>
             </a>
         </div>
 
         <div class="sections__title">
-            <h2 class="hab selected">Conhecimentos</h2>
-            <h2 class="proj">Projetos</h2>
-            <h2 class="mob">UI</h2>
+            <a href="#con" class="hab selected">Conhecimentos</a>
+            <a href="#pro" class="proj">Projetos</a>
+            <a href="#mob" class="mob">UI</a>
         </div>
         <div class="sections-container">
 
             <div class="sections-content">
-                <div class="habilidades-section">
+
+                <section id="con" class="habilidades-section">
                     <div class="card">
                         <img class="card__img" src="./images//habilidades/react-icon.png" />
                         <span class="card__text">
@@ -119,9 +119,9 @@
                     </div>
 
 
-                </div>
+                </section>
 
-                <div class="projetos-section notHidden">
+                <section id="pro" class="projetos-section">
 
                     <div class="project-card">
                         <div class="project__image">
@@ -142,7 +142,8 @@
                             Jogo da memória com temática do Mario World 3D feito
                             com HTML, CSS e JS.
                         </span>
-                        <a href="https://dxxgo.github.io/web/jogo-memoria" target="_blank" class="link-button">Conhecer</a>
+                        <a href="https://dxxgo.github.io/web/jogo-memoria" target="_blank"
+                            class="link-button">Conhecer</a>
                     </div>
 
                     <div class="project-card">
@@ -153,19 +154,23 @@
                             Aplicação com React.js para salvar repositórios favoritos
                             e ver suas issues. Dados são salvos no local storage.
                         </span>
-                        <a href="https://diegofrr.github.io/repos_project/" target="_blank" class="link-button">Conhecer</a>
+                        <a href="https://diegofrr.github.io/repos_project/" target="_blank"
+                            class="link-button">Conhecer</a>
                     </div>
 
 
-                </div>
+                </section>
 
-
-                <div class="mobile-section notHidden">
+                <section id="mob" class="mobile-section">
 
                     <div class="mobile-card">
                         <div class="project__image">
                             <img src="./images/mobile--books-app.png" />
                         </div>
+                        <a href="https://diegofrr.github.io/portfolio/images/mobile--books-app.png"
+                            class="link-button ampliar-btn">
+                            <i class="uil uil-search-plus"></i>
+                        </a>
 
                     </div>
 
@@ -173,11 +178,14 @@
                         <div class="project__image">
                             <img src="./images/mobile--gastos-app.png" />
                         </div>
-
+                        <a href="https://diegofrr.github.io/portfolio/images/mobile--books-app.png"
+                            class="link-button ampliar-btn">
+                            <i class="uil uil-search-plus"></i>
+                        </a>
                     </div>
 
+                </section>
 
-                </div>
             </div>
 
         </div>
