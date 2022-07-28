@@ -172,10 +172,6 @@ ul {
     scroll-behavior: smooth;
 }
 
-.displayNone {
-    display: none;
-}
-
 .notHidden {
     height: 0;
     overflow-y: hidden;
