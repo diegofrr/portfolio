@@ -153,16 +153,20 @@ ul {
 }
 
 .sections__title a:hover {
-    color: #525b6b;
-}
-
-.selected {
-    color: #FFF !important;
+    color: #606979;
 }
 
 .noscript .sections__title a,
 .noscript .selected {
     color: #404855 !important;
+}
+
+.noscript .sections__title a:hover {
+    color: #606979 !important;
+}
+
+.selected {
+    color: #FFF !important;
 }
 
 .sections-content {
