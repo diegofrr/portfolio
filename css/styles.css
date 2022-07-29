@@ -197,6 +197,10 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.mobile-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .card,
 .project-card,
 .mobile-card {
