@@ -24,10 +24,11 @@ let modal = document.querySelector('.modal');
 let mobileImage = document.querySelectorAll('.mobile-card');
 let scrollClass = document.querySelector('.active');
 
-let mailText = document.querySelector('.profile__mail-container');
+let mailButton = document.querySelector('.profile__mail-container');
+let mailText = document.querySelector('.profile__mail');
 let copyText = document.querySelector('.profile__mail-container .copy');
 
-mailText.addEventListener('click', () => {
+mailButton.addEventListener('click', () => {
     navigator.clipboard.writeText(mailText.innerHTML);
     copyText.classList.remove('displayNone');
     setTimeout(() => {
