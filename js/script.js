@@ -1,7 +1,7 @@
 // NOSCRIPT CONFIG
 document.querySelector('body').classList.remove('noscript');
-document.querySelector('.projetos-section').classList.add('notHidden');
-document.querySelector('.mobile-section').classList.add('notHidden');
+document.querySelector('.projetos-section').classList.add('isHidden');
+document.querySelector('.mobile-section').classList.add('isHidden');
 document.querySelectorAll('.ampliar-btn').forEach(i => i.style.display='none')
 document.querySelectorAll('.sections__title a').forEach(i => i.removeAttribute('href'))
 // 
@@ -24,6 +24,18 @@ let modal = document.querySelector('.modal');
 let mobileImage = document.querySelectorAll('.mobile-card');
 let scrollClass = document.querySelector('.active');
 
+let mailText = document.querySelector('.profile__mail-container');
+let copyText = document.querySelector('.profile__mail-container .copy');
+
+mailText.addEventListener('click', () => {
+    navigator.clipboard.writeText(mailText.innerHTML);
+    copyText.classList.remove('displayNone');
+    setTimeout(() => {
+        copyText.classList.add('displayNone');
+    }, 2000);
+
+})
+
 // let marginLeft = habilidadesSection.offsetWidth
 //     sectionsContainer.scrollLeft = marginLeft
 
@@ -35,9 +47,9 @@ habilidadesButton.addEventListener('click', () => {
     projetosButton.classList.remove('selected');
     mobileButton.classList.remove('selected');
 
-    habilidadesSection.classList.remove('notHidden');
-    projetosSection.classList.add('notHidden');
-    mobileSection.classList.add('notHidden'); 
+    habilidadesSection.classList.remove('isHidden');
+    projetosSection.classList.add('isHidden');
+    mobileSection.classList.add('isHidden'); 
 
 });
 
@@ -49,9 +61,9 @@ projetosButton.addEventListener('click', () => {
     habilidadesButton.classList.remove('selected');
     mobileButton.classList.remove('selected');
 
-    habilidadesSection.classList.add('notHidden');
-    projetosSection.classList.remove('notHidden');
-    mobileSection.classList.add('notHidden');
+    habilidadesSection.classList.add('isHidden');
+    projetosSection.classList.remove('isHidden');
+    mobileSection.classList.add('isHidden');
 });
 
 mobileButton.addEventListener('click', () => {
@@ -63,9 +75,9 @@ mobileButton.addEventListener('click', () => {
     projetosButton.classList.remove('selected');
 
 
-    habilidadesSection.classList.add('notHidden');
-    projetosSection.classList.add('notHidden');
-    mobileSection.classList.remove('notHidden');
+    habilidadesSection.classList.add('isHidden');
+    projetosSection.classList.add('isHidden');
+    mobileSection.classList.remove('isHidden');
 });
 
 closeModalButton.addEventListener('click', () => {
