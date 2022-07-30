@@ -103,51 +103,6 @@ ul {
     display: none !important;
 }
 
-.profile__mail-container {
-    border-radius: 6px;
-    position: relative;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    padding: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    color: #999;
-    transition: all .3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.164)
-}
-
-.profile__mail-container:hover {
-    border: 1px solid #527ece;
-    color: #6495ed
-}
-
-.profile__mail-container i {
-    font-size: 16px;
-    margin-left: 5px;
-}
-
-
-.profile__mail-container .copy {
-    display: block;
-    background-color: #527ece;
-    font-size: 10px;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    transition: all .3s ease;
-    color: #fff;
-    position: absolute;
-}
-
-.profile__mail {
-    font-size: 10px;
-    user-select: none;
-}
-
 .buttons {
     display: flex;
     align-items: center;

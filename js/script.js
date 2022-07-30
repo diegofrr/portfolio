@@ -24,21 +24,6 @@ let modal = document.querySelector('.modal');
 let mobileImage = document.querySelectorAll('.mobile-card');
 let scrollClass = document.querySelector('.active');
 
-let mailButton = document.querySelector('.profile__mail-container');
-let mailText = document.querySelector('.profile__mail');
-let copyText = document.querySelector('.profile__mail-container .copy');
-
-mailButton.classList.remove('displayNone');
-
-mailButton.addEventListener('click', () => {
-    navigator.clipboard.writeText(mailText.innerHTML);
-    copyText.classList.remove('displayNone');
-    setTimeout(() => {
-        copyText.classList.add('displayNone');
-    }, 2000);
-
-})
-
 // let marginLeft = habilidadesSection.offsetWidth
 //     sectionsContainer.scrollLeft = marginLeft
 
