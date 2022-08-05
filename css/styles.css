@@ -270,7 +270,7 @@ ul {
 
 .project-card {
     justify-content: flex-start;
-    height: 250px;
+
 }
 
 .card__img {
@@ -301,7 +301,6 @@ ul {
     font-size: 12px;
     font-weight: normal;
     width: 100%;
-    margin-bottom: 40px;
 }
 
 .link-button {
@@ -309,15 +308,14 @@ ul {
     display: grid;
     place-items: center;
     font-size: 12px;
+    min-height: 30px;
     height: 30px;
     background-color: #527ece;
     color: #FFF;
     border-radius: 200px;
     transition: all .3s ease;
+    margin-top: auto;
     margin-right: auto;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
 }
 
 .ampliar-btn {
