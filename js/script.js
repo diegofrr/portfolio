@@ -6,23 +6,24 @@ document.querySelectorAll('.ampliar-btn').forEach(i => i.style.display='none')
 document.querySelectorAll('.sections__title a').forEach(i => i.removeAttribute('href'))
 // 
 
-let habilidadesButton = document.querySelector('.hab');
-let projetosButton = document.querySelector('.proj');
-let mobileButton = document.querySelector('.mob');
+const habilidadesButton = document.querySelector('.hab');
+const projetosButton = document.querySelector('.proj');
+const mobileButton = document.querySelector('.mob');
 
-let sectionsContent = document.querySelector('.sections-content');
-let sectionsContainer = document.querySelector('.sections-container');
-let container = document.querySelector('.container');
+const sectionsContent = document.querySelector('.sections-content');
+const sectionsContainer = document.querySelector('.sections-container');
+const container = document.querySelector('.container');
 
-let habilidadesSection = document.querySelector('.habilidades-section');
-let projetosSection = document.querySelector('.projetos-section');
-let mobileSection = document.querySelector('.mobile-section');
+const habilidadesSection = document.querySelector('.habilidades-section');
+const projetosSection = document.querySelector('.projetos-section');
+const mobileSection = document.querySelector('.mobile-section');
 
-let closeModalButton = document.querySelector('.close-modal-button');
-let modal = document.querySelector('.modal');
+const closeModalButton = document.querySelector('.close-modal-button');
+const modal = document.querySelector('.modal');
+const closeModalContainer = document.querySelector('.close-modal-container');
 
-let mobileImage = document.querySelectorAll('.mobile-card');
-let scrollClass = document.querySelector('.active');
+const mobileImage = document.querySelectorAll('.mobile-card');
+const scrollClass = document.querySelector('.active');
 
 // let marginLeft = habilidadesSection.offsetWidth
 //     sectionsContainer.scrollLeft = marginLeft
@@ -85,7 +86,7 @@ mobileImage.forEach(item => {
     });
 })
 
-modal.addEventListener('click', () => {
+closeModalContainer.addEventListener('click', () => {
     modal.classList.add('modal-off')
     container.classList.remove('blurFilter');
 })
