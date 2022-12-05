@@ -82,45 +82,6 @@ allButtons.forEach((button, i) => {
   });
 });
 
-// habilidadesButton.addEventListener("click", () => {
-//   let marginLeft = habilidadesSection.offsetWidth;
-//   sectionsContainer.scrollLeft = marginLeft * -1;
-
-//   habilidadesButton.classList.add("selected");
-//   projetosButton.classList.remove("selected");
-//   mobileButton.classList.remove("selected");
-
-//   habilidadesSection.classList.remove("isHidden");
-//   projetosSection.classList.add("isHidden");
-//   mobileSection.classList.add("isHidden");
-// });
-
-// projetosButton.addEventListener("click", () => {
-//   let marginLeft = habilidadesSection.offsetWidth;
-//   sectionsContainer.scrollLeft = marginLeft;
-
-//   projetosButton.classList.add("selected");
-//   habilidadesButton.classList.remove("selected");
-//   mobileButton.classList.remove("selected");
-
-//   habilidadesSection.classList.add("isHidden");
-//   projetosSection.classList.remove("isHidden");
-//   mobileSection.classList.add("isHidden");
-// });
-
-// mobileButton.addEventListener("click", () => {
-//   let marginLeft = habilidadesSection.offsetWidth;
-//   sectionsContainer.scrollLeft = marginLeft * 2;
-
-//   mobileButton.classList.add("selected");
-//   habilidadesButton.classList.remove("selected");
-//   projetosButton.classList.remove("selected");
-
-//   habilidadesSection.classList.add("isHidden");
-//   projetosSection.classList.add("isHidden");
-//   mobileSection.classList.remove("isHidden");
-// });
-
 closeModalButton.addEventListener("click", () => {
   modal.classList.add("modal-off");
   container.classList.remove("blurFilter");
