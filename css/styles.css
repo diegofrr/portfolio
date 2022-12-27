@@ -135,6 +135,8 @@ ul {
 
 .cv-btn:active {
   background-color: #3674e7;
+  transform: scale(1.05);
+  transition: 0.2s ease;
 }
 
 .cv-btn i {
