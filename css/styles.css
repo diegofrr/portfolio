@@ -99,6 +99,11 @@ ul {
   color: #ddd;
 }
 
+.profile__location {
+  color: #606979;
+  font-size: 12px;
+}
+
 .displayNone {
   display: none !important;
 }
@@ -545,5 +550,4 @@ body {
   }
 }
 
-.noscript {
-}
+.noscript {}
