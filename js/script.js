@@ -46,15 +46,19 @@ const scrollClass = document.querySelector(".active");
 // let marginLeft = habilidadesSection.offsetWidth
 //     sectionsContainer.scrollLeft = marginLeft
 
+setTimeout(() => {
+  habilidadesButton.click();
+}, 100);
+
 function getSection(index, element) {
   let section =
     index === 0
       ? habilidadesSection
       : index === 1
-      ? certificadosSection
-      : index === 2
-      ? projetosSection
-      : mobileSection;
+        ? certificadosSection
+        : index === 2
+          ? projetosSection
+          : mobileSection;
 
   let button = element.target;
 

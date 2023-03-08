@@ -2,6 +2,7 @@
 
 :root {
   --bgColor: #0e131a;
+  --blueColor: #3674e7;
 }
 
 * {
@@ -127,7 +128,7 @@ ul {
   gap: 10px;
   padding: 0 20px;
   height: 40px;
-  border-radius: 6px;
+  border-radius: 60px;
   transition: all 0.7s ease-in-out;
   font-size: 13px;
   outline: 2px solid transparent;
@@ -375,7 +376,7 @@ ul {
   font-size: 12px;
   min-height: 30px;
   height: 30px;
-  background-color: #527ece;
+  background-color: var(--blueColor);
   color: #fff;
   border-radius: 200px;
   transition: all 0.3s ease;
@@ -392,7 +393,7 @@ ul {
   display: grid;
   place-items: center;
   font-size: 12px;
-  background-color: #527ece;
+  background-color: var(--bgColor);
   color: #fff;
   border-radius: 200px;
   transition: all 0.3s ease;
@@ -407,7 +408,7 @@ ul {
 }
 
 .link-button:hover {
-  background-color: #6495ed;
+  background-color: rgb(40, 95, 196);
 }
 
 /* SCROLLBAR STYLE */
