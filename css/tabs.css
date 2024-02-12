@@ -1,0 +1,32 @@
+.tabs__container {
+  height: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabs__list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.tabs__list li {
+  cursor: pointer;
+  color: var(--text-primary);
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.8 !important;
+  }
+}
+
+.tabs__list li[isActived] {
+  font-weight: 600;
+}
+
+.tabs__list :not(li[isActived]) {
+  opacity: 0.5;
+}
