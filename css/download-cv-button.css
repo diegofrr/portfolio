@@ -1,0 +1,39 @@
+.download-cv-btn {
+  background-color: var(--foreground);
+  color: var(--background);
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  transform: scale(1);
+
+  background: linear-gradient(45deg, #eee 40%, #fff 50%, #eee 60%);
+  background-size: 400px;
+
+  &:hover {
+    transform: scale(1.1) rotate(-5deg);
+    animation: background-animate 2s infinite forwards;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@keyframes background-animate {
+  0% {
+    background-position: -400px;
+  }
+  100% {
+    background-position: 400px;
+  }
+}
