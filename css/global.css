@@ -48,7 +48,7 @@ html {
 main {
   width: 100%;
   max-width: 640px;
-  min-height: 400px;
+  min-height: 320px;
   margin: 0 auto;
   padding: 20px;
   position: relative;

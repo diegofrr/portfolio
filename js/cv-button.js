@@ -1,3 +1,3 @@
-const button = document.querySelector(".download-cv-button");
+const cvButton = document.querySelector(".download-cv-btn");
 
-console.log(button);
+cvButton.onmouseenter = () => cvButton.classList.toggle("hover-rotate-left");

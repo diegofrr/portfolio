@@ -1,3 +1,5 @@
+import "./cv-button.js";
+
 const tabList = document.querySelectorAll(".tabs__list li");
 const sectionList = document.querySelectorAll(".content section");
 
