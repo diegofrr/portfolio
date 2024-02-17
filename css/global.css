@@ -48,10 +48,28 @@ html {
 main {
   width: 100%;
   max-width: 640px;
-  min-height: 320px;
+  min-height: 380px;
   margin: 0 auto;
   padding: 20px;
   position: relative;
+  transition: margin 0.3s ease;
+  animation: main-animate 1s ease;
+
+  @media (max-width: 480px) {
+    min-height: 520px;
+  }
+}
+
+@keyframes main-animate {
+  0% {
+    margin-bottom: -100px;
+    opacity: 0;
+  }
+
+  100% {
+    margin: 0;
+    opacity: 1;
+  }
 }
 
 button {
