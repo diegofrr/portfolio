@@ -28,5 +28,5 @@
 }
 
 .tabs__list :not(li[isActived]) {
-  opacity: 0.5;
+  color: var(--text-secondary);
 }
