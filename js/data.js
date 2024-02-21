@@ -39,4 +39,16 @@ export const projects = [
     link: "https://github.com/diegofrr/project-1",
     image: "",
   },
+  {
+    title: "Projeto 2",
+    description: "Descrição do projeto 2",
+    link: "https://github.com/diegofrr/project-2",
+    image: "",
+  },
+  {
+    title: "Projeto 3",
+    description: "Descrição do projeto 3",
+    link: "https://github.com/diegofrr/project-3",
+    image: "",
+  },
 ];

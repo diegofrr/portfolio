@@ -1,3 +1,4 @@
+import "./projects.js";
 import "./certificates.js";
 
 const tabList = document.querySelectorAll(".tabs__list li");
