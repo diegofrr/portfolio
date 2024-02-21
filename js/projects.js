@@ -30,7 +30,7 @@ prevButton.onclick = () => {
 function scrollContentBy(w, h) {
   scrolling = true;
   content.scrollBy(w, h);
-  setTimeout(() => (scrolling = false), 1000);
+  setTimeout(() => (scrolling = false), 500);
 }
 
 function getTemplate(project) {
