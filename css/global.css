@@ -12,8 +12,6 @@
 @import "./sections/projects.css";
 @import "./sections/certificates.css";
 
-@import "./_.css";
-
 * {
   padding: 0;
   margin: 0;
