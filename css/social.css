@@ -1,18 +1,18 @@
 .social-container {
   position: absolute;
   top: 0;
-  left: -34px;
+  left: -40px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
 
   @media (max-width: 800px) {
     height: 24px;
     top: -34px;
     left: auto;
-    left: 20px;
+    left: 16px;
     flex-direction: row;
   }
 
@@ -29,16 +29,25 @@
   } */
 
   a {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.6;
+
+    svg {
+      width: 18px;
+
+      path {
+        fill: var(--text-primary);
+      }
+    }
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.05);
+      opacity: 1;
     }
   }
 }

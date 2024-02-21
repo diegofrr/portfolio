@@ -1,3 +1,4 @@
+import "./social.js";
 import "./projects.js";
 import "./certificates.js";
 
