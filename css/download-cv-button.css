@@ -20,12 +20,8 @@
   background-size: 400px;
 
   &:hover {
-    transform: scale(1.05) rotate(5deg);
-    animation: background-animate 2s infinite forwards;
-
-    &.hover-rotate-left {
-      transform: scale(1.05) rotate(-5deg) !important;
-    }
+    transform: scale(1.04);
+    animation: background-animate 2s forwards;
   }
 
   &:active {
