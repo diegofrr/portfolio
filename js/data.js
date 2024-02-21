@@ -36,18 +36,20 @@ export const projects = [
   {
     title: "Groupyt",
     repo: "https://github.com/diegofrr/groupyt",
-    link: "https://yssues.vercel.app/",
+    link: "https://groupyt.vercel.app/",
     image: "./assets/projects/groupyt.jpg",
     description: `Uma plataforma para assistir vídeos do 
     Youtube em grupo com amigos com bate-papo integrado.`,
+    stack: "Nextjs, TypeScript, Firebase e Styled Components",
   },
   {
     title: "Yssues",
     repo: "https://github.com/diegofrr/yssues",
     link: "https://yssues.vercel.app/",
     image: "./assets/projects/yssues.jpg",
-    description: `Aplicação feita em Next.js para salvar repositórios 
-    favoritos e acompanhar suas issues. `,
+    description: `Aplicação simples feita em Next.js que permite 
+    salvar repositórios favoritos e acompanhar suas issues.`,
+    stack: "Nextjs e TypeScript",
   },
   {
     title: "Likedin",
@@ -56,6 +58,7 @@ export const projects = [
     image: "./assets/projects/likedin.jpg",
     description: `Uma extensão que facilita a troca de tema no 
     Linkedin e possibilita curtir posts com clique duplo.`,
+    stack: "HTML, CSS e JavaScript",
   },
   {
     title: "Sys Chamados",
@@ -64,14 +67,16 @@ export const projects = [
     image: "./assets/projects/chamados_sys.png",
     description: `Sistema de chamados feito com React.js e 
     persistência dos dados e autenticação com Firebase.`,
+    stack: "Reactjs, JavaScript, Firebase e Styled Components",
   },
   {
     title: "findme.e",
     repo: "https://github.com/diegofrr/findme.e",
     link: "https://dxxgo.github.io/web/jogo-memoria",
     image: "./assets/projects/findme.png",
-    description: `Jogo da memória com temática do Mario World 
-    3D feito com HTML, CSS e JS. `,
+    description: `Jogo da memória feito com HTML, CSS e JS.
+    A pontuação final é baseada no tempo de jogo quantidade de jogadas.`,
+    stack: "HTML, CSS e JavaScript",
   },
 ];
 

@@ -13,8 +13,7 @@ prevButton.innerHTML = icons().prevSvg;
 nextButton.innerHTML = icons().nextSvg;
 
 for (const project of projects) {
-  const { title, description, image, link, repo } = project;
-  const template = getTemplate({ title, description, image, link, repo });
+  const template = getTemplate(project);
   container.innerHTML += template;
 }
 
@@ -34,19 +33,20 @@ function scrollContentBy(w, h) {
   setTimeout(() => (scrolling = false), 1000);
 }
 
-function getTemplate({ title, description, image, link, repo }) {
+function getTemplate(project) {
   return `
     <div class="project__container">
-      <img class="project__image" src="${image}" alt="${title}">
+      <img class="project__image" src="${project.image}" alt="${project.title}">
       <div class="project__header">
-        <p class="project__title">${title}</p>
+        <p class="project__title">${project.title}</p>
         <div class="project__links">
-          <a target="_blank" href="${repo}">repo</a>
+          <a target="_blank" href="${project.repo}">repo</a>
           <span>|</span>
-          <a target="_blank" href="${link}">ver</a>
+          <a target="_blank" href="${project.link}">ver</a>
         </div>
-      </div>
-      <span class="project__description">${description}</span>
+        </div>
+        <span class="project__description">${project.description}</span>
+        <span class="project__stack">${project.stack}</span>
     </div>
   `;
 }
