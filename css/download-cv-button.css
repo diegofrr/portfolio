@@ -21,7 +21,7 @@
 
   &:hover {
     transform: scale(1.04);
-    animation: background-animate 2s forwards;
+    animation: background-animate 2s infinite forwards;
   }
 
   &:active {
