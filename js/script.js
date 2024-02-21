@@ -1,7 +1,16 @@
+import "./certificates.js";
+
 const tabList = document.querySelectorAll(".tabs__list li");
 const sectionList = document.querySelectorAll(".content section");
 
-tabList.forEach((tab) => (tab.onclick = () => handleSelectTab(tab)));
+for (const tab of tabList) {
+  tab.onclick = () => handleSelectTab(tab);
+
+  if (tab.hasAttribute("isActived")) {
+    const tabIndex = getTabIndex(tab);
+    activeSectionWithIndex(tabIndex);
+  }
+}
 
 function handleSelectTab(tab) {
   tabList.forEach((tab) => tab.removeAttribute("isActived"));

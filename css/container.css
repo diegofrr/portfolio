@@ -12,15 +12,3 @@
 .content section:not([isActived]) {
   display: none;
 }
-
-/* Sections */
-
-.section__about-me {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 16px;
-
-  span {
-    color: var(--text-secondary) !important;
-  }
-}
