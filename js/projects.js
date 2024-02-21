@@ -1,6 +1,7 @@
 import { projects } from "./data.js";
 
-let counter = 0;
+let scrolling = false;
+const projectWidth = 260; // width + gap
 
 const container = document.querySelector(".projects__container");
 const content = document.querySelector(".section__projects__content");
@@ -18,14 +19,20 @@ for (const project of projects) {
 }
 
 nextButton.onclick = () => {
-  const w = document.querySelector(".project__container").clientWidth + 20;
-  content.scrollBy(w, 0);
+  if (scrolling) return;
+  scrollContentBy(projectWidth, 0);
 };
 
 prevButton.onclick = () => {
-  const w = document.querySelector(".project__container").clientWidth + 20;
-  content.scrollBy(w * -1, 0);
+  if (scrolling) return;
+  scrollContentBy(projectWidth * -1, 0);
 };
+
+function scrollContentBy(w, h) {
+  scrolling = true;
+  content.scrollBy(w, h);
+  setTimeout(() => (scrolling = false), 1000);
+}
 
 function getTemplate({ title, description, image, link, repo }) {
   return `
