@@ -1,0 +1,43 @@
+#cestlavie {
+  position: fixed;
+  background-color: #000;
+  width: 32px;
+  height: 32px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: help;
+
+  span,
+  a {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  a {
+    display: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--text-secondary);
+    }
+  }
+
+  &._ {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    span {
+      display: none;
+    }
+
+    a {
+      display: inline;
+    }
+  }
+}
