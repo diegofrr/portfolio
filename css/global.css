@@ -60,7 +60,7 @@ main {
   animation: main-animate 1s ease;
 
   @media (max-width: 480px) {
-    min-height: 520px;
+    min-height: 460px;
   }
 }
 
